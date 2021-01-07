@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(247, 244, 241);
+  width: 100vw;
+}
+
+/* Header */
+/* =============================== */
+header {
+  max-width: 600px;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(32, 31, 31);
+  color: white;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 9px 9px;
+}
+
+/* Validation */
+/* ================================ */
+.validation {
+  max-width: 500px;
+  width: 80%;
+  border-radius: 5px;
+  margin: 4px auto;
+}
+.validation-success {
+  background-color: rgb(169, 226, 169);
+  color: rgb(5, 104, 5);
+}
+.validation-reject {
+  background-color: rgb(224, 191, 191);
+  color: rgb(202, 7, 7);
+}
+.validation h4 {
+  padding: 3px;
+  text-align: center;
+}
+
+/* Input Task */
+/* ========================= */
+.input-task {
+  max-width: 500px;
+  width: 80%;
+  margin: 5px auto 10px;
+  height: 100px;
+  background-color: rgb(236, 231, 231);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 2px rgb(94, 92, 92);
+}
+.input-task form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.input-task #task {
+  outline: none;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1.5px solid white;
+  transition: 0.3s;
+}
+.input-task #task:hover,
+.input-task #task:active {
+  border: 1.5px solid rgb(129, 128, 128);
+}
+.input-task #btn {
+  margin-top: 10px;
+  font-family: inherit;
+  background-color: black;
+  color: white;
+  padding: 8px;
+  outline: none;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 5px;
+  transition: 0.3s;
+
+  font-size: 1rem;
+}
+.input-task #btn:hover,
+.input-task #btn:active {
+  background-color: rgb(129, 128, 128);
+  color: black;
+  border: 2px solid rgb(129, 128, 128);
+}
+.clr-btn {
+  display: block;
+  transition: 0.3s;
+  max-width: 500px;
+  padding: 6px;
+  width: 72%;
+  margin: 5px auto;
+  text-align: center;
+  font-family: inherit;
+  background-color: tomato;
+  border: 2px solid tomato;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  outline: none;
+  font-size: 1rem;
+}
+.clr-btn:hover,
+.clr-btn:active {
+  background-color: rgb(250, 154, 137);
+  border: 2px solid rgb(243, 159, 145);
+}
+
+/* Display output */
+/* ============================ */
+.display {
+  margin-top: 13px;
+}
+.display-items {
+  max-width: 500px;
+  width: 80%;
+  margin: 7px auto;
+  padding: 5px;
+  text-align: center;
+  background-color: rgb(236, 231, 231);
+  display: grid;
+  grid-template-columns: 1fr 30px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 2px rgb(94, 92, 92);
+}
+.display-items h4 {
+  padding: 0 9px;
+}
+.display-items .fa {
+  border-left: 1.2px solid black;
+}
+
+/* Media Query */
+/* ================================================= */
+/* ================================================= */
+/* ================================================= */
+
+@media (min-width: 700px) {
+  .validation,
+  .input-task,
+  .display-items {
+    width: 40%;
+  }
+  .clr-btn {
+    width: 36%;
+  }
+}
